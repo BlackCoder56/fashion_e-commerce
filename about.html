@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About FashionHub - Premium Clothing Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <!-- Logo -->
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-2xl">FashionHub</span>
+                        </a>
+                    </div>
+                    <!-- Primary Nav -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Men</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Women</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Kids</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Sale</a>
+                        <a href="about.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">About</a>
+                    </div>
+                </div>
+                <!-- Secondary Nav -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#" class="py-2 px-2 text-gray-500 hover:text-green-500 transition duration-300"><i class="fas fa-search"></i></a>
+                    <a href="#" class="py-2 px-2 text-gray-500 hover:text-green-500 transition duration-300"><i class="fas fa-user"></i></a>
+                    <a href="#" class="py-2 px-2 text-gray-500 hover:text-green-500 transition duration-300 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Men</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Women</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Kids</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Sale</a></li>
+                <li class="active"><a href="about.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <div class="relative bg-gray-900">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="FashionHub team">
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Our Story</h1>
+            <p class="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">Discover the passion behind FashionHub and our commitment to quality fashion.</p>
+        </div>
+    </div>
+
+    <!-- About Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            <div class="mb-12 lg:mb-0">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Who We Are</h2>
+                <p class="text-gray-600 mb-4">Founded in 2015, FashionHub began as a small boutique with a big vision: to make high-quality fashion accessible to everyone. What started as a single store has grown into a beloved brand with locations across the country and a thriving online presence.</p>
+                <p class="text-gray-600 mb-4">Our team of fashion experts carefully curates each collection, blending timeless classics with the latest trends to create styles that inspire confidence and self-expression.</p>
+                <p class="text-gray-600 mb-6">At FashionHub, we believe that great style shouldn't come at the expense of quality or ethics. That's why we're committed to sustainable practices and ethical sourcing throughout our supply chain.</p>
+                <div class="bg-green-50 p-6 rounded-lg border border-green-100">
+                    <h3 class="text-lg font-semibold text-green-800 mb-2">Our Mission</h3>
+                    <p class="text-green-700">To empower individuals to express their unique style through high-quality, affordable fashion while maintaining ethical and sustainable business practices.</p>
+                </div>
+            </div>
+            <div class="relative rounded-lg overflow-hidden shadow-xl">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="FashionHub team" class="w-full h-auto">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-30"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm font-medium">The FashionHub Team - 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Values Section -->
+    <div class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600 mb-4">
+                        <i class="fas fa-heart text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Quality First</h3>
+                    <p class="text-gray-600">We meticulously select materials and craftsmanship to ensure every piece meets our high standards for durability and comfort.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600 mb-4">
+                        <i class="fas fa-leaf text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Sustainable Practices</h3>
+                    <p class="text-gray-600">From eco-friendly packaging to responsible sourcing, we're committed to reducing our environmental footprint.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600 mb-4">
+                        <i class="fas fa-hands-helping text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Customer Focus</h3>
+                    <p class="text-gray-600">Your satisfaction is our priority. We listen, adapt, and go above and beyond to create exceptional shopping experiences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12">Meet Our Founders</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Founder 1 -->
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-48 rounded-full object-cover shadow-md" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Sarah Johnson">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900">Sarah Johnson</h3>
+                    <p class="text-green-600 font-medium mb-2">Co-Founder & Creative Director</p>
+                    <p class="text-gray-600">With a background in fashion design from Parsons, Sarah brings an artistic eye and passion for sustainable materials to every collection.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-green-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-green-500"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-green-500"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Founder 2 -->
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-48 rounded-full object-cover shadow-md" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Michael Chen">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900">Michael Chen</h3>
+                    <p class="text-green-600 font-medium mb-2">Co-Founder & CEO</p>
+                    <p class="text-gray-600">Michael's business acumen and retail expertise have been instrumental in growing FashionHub from a local boutique to a national brand.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-green-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-green-500"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-green-500"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TikTok Section -->
+    <div class="bg-green-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900">Join Our TikTok Community</h2>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">See our latest styles in action and be part of the FashionHub movement!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- TikTok Video Embed -->
+                <div class="relative" style="padding-bottom: 125%"> <!-- 4:5 aspect ratio -->
+                    <div class="absolute inset-0 bg-white rounded-xl shadow-lg overflow-hidden">
+                        <!-- Replace with your actual TikTok embed code -->
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bogfashion123/video/7429035103004675361" data-video-id="7429035103004675361" style="max-width: 605px;min-width: 325px;" > 
+                            <section> <a target="_blank" title="@bogfashion123" href="https://www.tiktok.com/@bogfashion123?refer=embed">@bogfashion123</a> <a title="ankara" target="_blank" href="https://www.tiktok.com/tag/ankara?refer=embed">#ankara</a> <a title="fashion" target="_blank" href="https://www.tiktok.com/tag/fashion?refer=embed">#fashion</a> <a title="kitengefashion" target="_blank" href="https://www.tiktok.com/tag/kitengefashion?refer=embed">#kitengefashion</a> <a title="viral_video" target="_blank" href="https://www.tiktok.com/tag/viral_video?refer=embed">#viral_video</a> <a target="_blank" title="♬ Egwu - Chike &#38; Mohbad" href="https://www.tiktok.com/music/Egwu-7310435821462161409?refer=embed">♬ Egwu - Chike &#38; Mohbad</a> 
+                            </section> 
+                        </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                        
+                        <!-- Fallback image if embed doesn't load -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-gray-100">
+                            <div class="text-center p-6">
+                                <i class="fab fa-tiktok text-5xl text-gray-400 mb-4"></i>
+                                <p class="text-gray-600">Check out our TikTok @fashionhub</p>
+                                <a href="https://www.tiktok.com/@fashionhub" target="_blank" class="inline-block mt-4 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition duration-300">
+                                    View on TikTok
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TikTok CTA Content -->
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <div class="flex items-center mb-6">
+                            <i class="fab fa-tiktok text-3xl text-black mr-4"></i>
+                            <h3 class="text-2xl font-bold text-gray-900">Why Follow Us on TikTok?</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Exclusive behind-the-scenes content from our photoshoots</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">First look at new arrivals before they hit the store</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Styling tips and outfit inspiration from our team</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">Exclusive TikTok-only discounts and promotions</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <p class="text-gray-600">See real customers styling our pieces</p>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="https://www.tiktok.com/@fashionhub" target="_blank" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-gray-800 transition duration-300 w-full sm:w-auto">
+                                <i class="fab fa-tiktok mr-2"></i> Follow @fashionhub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-500">Tag us in your FashionHub outfits for a chance to be featured!</p>
+                        <div class="mt-4 flex justify-center space-x-2">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800">#FashionHub</span>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800">#FashionHubStyle</span>
+                            <!-- <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800">#FashionHubFam</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center mb-12">FashionHub By The Numbers</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Stat 1 -->
+                <div>
+                    <p class="text-4xl font-bold text-green-400 mb-2">8</p>
+                    <p class="text-gray-400 uppercase text-sm tracking-wider">Years in Business</p>
+                </div>
+                <!-- Stat 2 -->
+                <div>
+                    <p class="text-4xl font-bold text-green-400 mb-2">250K+</p>
+                    <p class="text-gray-400 uppercase text-sm tracking-wider">Happy Customers</p>
+                </div>
+                <!-- Stat 3 -->
+                <div>
+                    <p class="text-4xl font-bold text-green-400 mb-2">45</p>
+                    <p class="text-gray-400 uppercase text-sm tracking-wider">Store Locations</p>
+                </div>
+                <!-- Stat 4 -->
+                <div>
+                    <p class="text-4xl font-bold text-green-400 mb-2">100%</p>
+                    <p class="text-gray-400 uppercase text-sm tracking-wider">Ethically Sourced</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Ready to Experience FashionHub?</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">Join thousands of satisfied customers who've discovered their perfect style with us.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="inline-block bg-green-500 py-3 px-8 border border-transparent rounded-md text-base font-medium text-white hover:bg-green-600">Shop Now</a>
+                <a href="#" class="inline-block bg-white py-3 px-8 border border-gray-300 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Visit a Store</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- About Column -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About FashionHub</h3>
+                    <p class="text-gray-400 mb-4">We offer premium quality clothing for men, women, and kids at affordable prices. Our mission is to make fashion accessible to everyone.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.tiktok.com/@fashionhub" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Shop</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service Column -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Size Guide</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="mt-4 flex items-center">
+                        <i class="fas fa-phone-alt text-green-500 mr-2"></i>
+                        <span class="text-gray-400">+256 770-849-939</span>
+                    </div>
+                    <div class="mt-2 flex items-center">
+                        <i class="fas fa-envelope text-green-500 mr-2"></i>
+                        <span class="text-gray-400">support@fashionhub.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400">&copy; 2023 FashionHub. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6 items-center">
+                    <i class="fab fa-cc-visa text-3xl text-gray-300 hover:text-white transition-colors duration-300" aria-label="Visa"></i>
+                    <i class="fab fa-cc-mastercard text-3xl text-gray-300 hover:text-white transition-colors duration-300" aria-label="Mastercard"></i>
+                    <i class="fab fa-cc-paypal text-3xl text-gray-300 hover:text-white transition-colors duration-300" aria-label="PayPal"></i>
+                    <i class="fab fa-cc-apple-pay text-3xl text-gray-300 hover:text-white transition-colors duration-300" aria-label="Apple Pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
