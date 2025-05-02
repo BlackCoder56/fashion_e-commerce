@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Collection | FashionHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-2xl">FashionHub</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                        <a href="men.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Men</a>
+                        <a href="women.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Women</a>
+                        <a href="kids.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Kids</a>
+                        <a href="sale.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Sale</a>
+                        <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#" class="py-2 px-2 text-gray-500 hover:text-green-500 transition duration-300"><i class="fas fa-search"></i></a>
+                    <a href="#" class="py-2 px-2 text-gray-500 hover:text-green-500 transition duration-300"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" class="py-2 px-2 text-gray-500 hover:text-green-500 transition duration-300 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                    </a>
+                </div>
+                <!-- Mobile menu button and cart icon -->
+                <div class="md:hidden flex items-center space-x-4">
+                    <a href="cart.html" class="text-green-500 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                    </a>
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="men.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Men</a></li>
+                <li><a href="women.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Women</a></li>
+                <li class="active"><a href="kids.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Kids</a></li>
+                <li><a href="sale.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Sale</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Kids Page Hero -->
+    <div class="relative bg-gray-800">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Kids Collection</h1>
+            <p class="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">Adorable styles for your little ones</p>
+        </div>
+    </div>
+
+    <!-- Age Group Filters -->
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="px-4 py-2 bg-green-500 text-white rounded-full font-medium">All Ages</button>
+                <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium">Newborn (0-3M)</button>
+                <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium">Infant (3-12M)</button>
+                <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium">Toddler (1-3Y)</button>
+                <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium">Kids (4-8Y)</button>
+                <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium">Big Kids (8-12Y)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters and Sorting -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-4">
+                <span class="text-gray-700">Filter:</span>
+                <select class="border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-sm">
+                    <option>All Categories</option>
+                    <option>Tops</option>
+                    <option>Bottoms</option>
+                    <option>Dresses</option>
+                    <option>Outerwear</option>
+                    <option>Accessories</option>
+                </select>
+                <select class="border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-sm">
+                    <option>All Sizes</option>
+                    <option>Newborn</option>
+                    <option>0-3M</option>
+                    <option>3-6M</option>
+                    <option>6-12M</option>
+                    <option>12-18M</option>
+                    <option>2T</option>
+                    <option>3T</option>
+                    <option>4T</option>
+                    <option>5T</option>
+                </select>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-gray-700">Sort by:</span>
+                <select class="border-gray-300 rounded-md shadow-sm focus:border-green-500 focus:ring-green-500 text-sm">
+                    <option>Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest Arrivals</option>
+                    <option>Best Sellers</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-t-lg bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1595341595379-cf0f6f761e04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dinosaur Hoodie" class="w-full h-full object-cover object-center group-hover:opacity-75">
+                    <div class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">NEW</div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">
+                                <a href="product-detail.html">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    Dinosaur Hoodie
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">Toddler (2-4Y)</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-medium text-gray-900">$24.99</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-1">(87)</span>
+                        </div>
+                        <button class="text-gray-400 hover:text-green-600">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-t-lg bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1604917019117-282e4a4a1d1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Floral Summer Dress" class="w-full h-full object-cover object-center group-hover:opacity-75">
+                    <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">SALE</div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">
+                                <a href="product-detail.html">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    Floral Summer Dress
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">Infant (6-12M)</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-medium text-gray-900">$19.99</p>
+                            <p class="text-xs text-gray-500 line-through">$29.99</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-1">(112)</span>
+                        </div>
+                        <button class="text-green-600 hover:text-green-800">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-t-lg bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1600189261867-697c0a3649c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Denim Overalls" class="w-full h-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">
+                                <a href="product-detail.html">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    Denim Overalls
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">Toddler (2-4Y)</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-medium text-gray-900">$29.99</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-1">(64)</span>
+                        </div>
+                        <button class="text-gray-400 hover:text-green-600">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-t-lg bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1604917019117-282e4a4a1d1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Unicorn Sweatshirt" class="w-full h-full object-cover object-center group-hover:opacity-75">
+                    <div class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">NEW</div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">
+                                <a href="product-detail.html">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    Unicorn Sweatshirt
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">Kids (4-8Y)</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-medium text-gray-900">$22.99</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-1">(43)</span>
+                        </div>
+                        <button class="text-gray-400 hover:text-green-600">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <a href="#" class="px-3 py-1 rounded-md bg-green-500 text-white">
+                    1
+                </a>
+                <a href="#" class="px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100">
+                    2
+                </a>
+                <a href="#" class="px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100">
+                    3
+                </a>
+                <a href="#" class="px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100">
+                    Next <i class="fas fa-chevron-right ml-1"></i>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About FashionHub</h3>
+                    <p class="text-gray-400 mb-4">Premium fashion for the whole family at affordable prices.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Shop</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Size Guide</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe for exclusive offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400">&copy; 2025 FashionHub. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6 items-center">
+                    <i class="fab fa-cc-visa text-3xl text-gray-300 hover:text-white transition-colors duration-300" aria-label="Visa"></i>
+                    <i class="fab fa-cc-mastercard text-3xl text-gray-300 hover:text-white transition-colors duration-300" aria-label="Mastercard"></i>
+                    <i class="fab fa-cc-paypal text-3xl text-gray-300 hover:text-white transition-colors duration-300" aria-label="PayPal"></i>
+                    <i class="fab fa-cc-apple-pay text-3xl text-gray-300 hover:text-white transition-colors duration-300" aria-label="Apple Pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
